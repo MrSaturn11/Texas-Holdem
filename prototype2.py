@@ -6,9 +6,9 @@ deck_suits = ["♠","♥","♣","♦"]
 deck_values = ["2","3","4","5","6","7","8","9","10",
           "J","Q","K","A"]
 deck =[]
-for value in deck_values:
+for key in deck_values:
     for suit in deck_suits:
-        deck.append({"value":value,"suit":suit})
+        deck.append({"value":key,"suit":suit, "rank":values_rank[key]})
 #shuffle deck
 
 random.shuffle(deck)
@@ -61,4 +61,5 @@ while dealer_draws > 0:
 #make player and dealer cards into one big list of dictionaires
 
 final_cards = player_cards + dealer_cards
+
 
