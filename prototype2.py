@@ -63,3 +63,18 @@ while dealer_draws > 0:
 final_cards = player_cards + dealer_cards
 
 
+#check for flush
+final_card_suits =[]
+
+for card in final_cards:
+    final_card_suits.append(card["suit"]) 
+print(final_card_suits) 
+
+if final_card_suits.count('♠') >=5:
+    print("Flush")
+elif final_card_suits.count('♣') >=5:
+    print("Flush")
+elif final_card_suits.count('♥') >=5:
+    print("Flush")
+elif final_card_suits.count('♦') >=5:
+    print("Flush")
